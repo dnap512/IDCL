@@ -12,4 +12,4 @@ But, maybe it will work well if torch version is more than 1.2.0.
 1. Download dataset from below link:
 - https://drive.google.com/file/d/11zfQb-IAClxCHUy-EH8uVaum27fJmexT/view?usp=sharing
 
-2. Unzip pacs_official.zip in this repository.
+2. Unzip pacs_official.zip in IDCL/codes/

@@ -160,7 +160,7 @@ def do_training(device, epochs, model,optimizer, criterion,
 
             batch += len(x)
             print('Epoch: {} [{}/{} ({:.0f}%)],\tAccuracy: {:.1f}%,  \t Loss: {:.6f}'.format(
-                epoch+1, batch, len(train_loader.dataset),100. * (idx+1) / len(train_loader), 100.*(accuracy.item()/len(x)), loss.item()))
+                epoch+1, batch, len(train_loader.dataset),100.*(batch/len(train_loader.dataset)), 100.*(accuracy.item()/len(x)), loss.item()))
 
         lr_scheduler.step()
         torch.cuda.empty_cache()
